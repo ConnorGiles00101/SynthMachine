@@ -18,9 +18,9 @@ static uint8_t DMA_BUFFER_MEM_SECTION DAC_output_buffer[BUFF_SIZE];
 #define MIDI_MIN 28
 #define I2C_SAMPLE_RATE 3000
 
-class CustomAdsr { //State machine for handling envelopes
+class CustomAdsr { //State machine for handling envelopes, sits in release state unless note on
     public:
-        enum EnvState {
+        enum EnvState { //enum for tracking current phase of ADSR envelope
             Attack,
             Decay,
             Sustain,
@@ -37,7 +37,7 @@ class CustomAdsr { //State machine for handling envelopes
 
         float sample_rate;
 
-        float AttackTime;
+        float AttackTime; //set in seconds
         float DecayTime;
         float ReleaseTime;
         float SustainPoint;
@@ -45,7 +45,7 @@ class CustomAdsr { //State machine for handling envelopes
         float ADSR_Sample_Val = 0;
         float ADSR_Sample_Val_old = 0;
 
-        void ProcessEnvNoteOn (){
+        void ProcessEnvNoteOn (){ //computes next sample of envelope based on current state and previous sample value, switches where appropriate
             
             switch(Env_State) {
                 case Attack:
@@ -84,7 +84,7 @@ class CustomAdsr { //State machine for handling envelopes
 
         }
 
-        void ProcessEnvNoteOff (){
+        void ProcessEnvNoteOff (){ //handles transitioning to release state and computing samples for release portion of envelope
                 
                 switch(Env_State) {
                     case Attack:
@@ -116,7 +116,7 @@ class CustomAdsr { //State machine for handling envelopes
 
             }
 
-        void ProcessENV(){
+        void ProcessENV(){ //computes next sample to send to CV each time it is called
             switch(Note_Stat){
                 case OnNote:
                     ProcessEnvNoteOn();
@@ -271,7 +271,7 @@ int main(void)
     float log_time = 0;
     float blink_time = 0;
     bool ledState = false;
-    float I2C_Signal_Clock = 0;
+    float I2C_Signal_Clock = 0; //holds current value of clock, used specifically for timing DAC samples
     uint8_t LED_INTER = 50;
 
     //hw.PrintLine("MIDI USB Host initialized");
@@ -345,7 +345,7 @@ int main(void)
                         // Do something on Note On events
                         {
                             //uint8_t VelID = msg.AsNoteOn().velocity;
-                            DAC_Channels[0] = MIDI_NOTE_TO_DAC_VOLTAGE(msg.AsNoteOn().note);
+                            DAC_Channels[0] = MIDI_NOTE_TO_DAC_VOLTAGE(msg.AsNoteOn().note); //sets the value to be sent to note CV based on current midi note
                             VolumeEnv.SetState(CustomAdsr::OnNote);
                         }
                         break;
@@ -360,27 +360,7 @@ int main(void)
                 //Regardless of message, let's add the message data to our queue to output
                 event_log.PushBack(msg);
             }
-/**
-            //Now separately, every 5ms we'll print the top message in our queue if there is one
-            if(now - log_time > 5)
-            {
-                log_time = now;
-                if(!event_log.IsEmpty())
-                {
-                    auto msg = event_log.PopFront();
-                    char outstr[128];
-                    const char* type_str = MidiEvent::GetTypeAsString(msg);
-                    sprintf(outstr,
-                            "time:\t%f\ttype: %s\tChannel:  %d\tData MSB: "
-                            "%d\tData LSB: %d\n",
-                            now,
-                            type_str,
-                            msg.channel,
-                            msg.data[0],
-                            msg.data[1]);
-                    //hw.PrintLine(outstr);
-                }
-            }*/
+
         }
         
         if(I2C_Signal_Clock >= (1.0f / I2C_SAMPLE_RATE)){
