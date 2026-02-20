@@ -1,24 +1,16 @@
-/** Example of setting reading MIDI Input via USB Host
- *  
- * 
- *  This requires a USB-A connector
- * 
- *  This example will also log incoming messages to the serial port for general MIDI troubleshooting
- */
+/** MIDI Handling based on USB Midi example */
+/** Code designed for MCP4728 4 channel 12-bit I2C DAC */
 #include "daisy_seed.h"
 #include "usbh_midi.h"
 #include "daisysp.h"
 
-/** This prevents us from having to type "daisy::" in front of a lot of things. */
 using namespace daisy;
 using namespace daisysp;
 
-/** Global Hardware access */
 DaisySeed      hw;
 MidiUsbHandler midi;
 USBHostHandle  usbHost;
 
-// uint8_t output_buffer[8];
 #define BUFF_SIZE 12
 static uint8_t DMA_BUFFER_MEM_SECTION DAC_output_buffer[BUFF_SIZE];
 
@@ -26,7 +18,7 @@ static uint8_t DMA_BUFFER_MEM_SECTION DAC_output_buffer[BUFF_SIZE];
 #define MIDI_MIN 28
 #define I2C_SAMPLE_RATE 3000
 
-class CustomAdsr {
+class CustomAdsr { //State machine for handling envelopes
     public:
         enum EnvState {
             Attack,
@@ -148,7 +140,7 @@ class CustomAdsr {
         }
 };
 
-/** FIFO to hold messages as we're ready to print them */
+/** FIFO to hold messages as we're ready to print them - holdover from example code*/
 FIFO<MidiEvent, 128> event_log;
 
 void USBH_Connect(void* data)
@@ -219,7 +211,7 @@ void DAC_I2C_SET_GAIN(uint8_t DAC_Address, uint8_t G_A, uint8_t G_B, uint8_t G_C
     }
 }
 
-uint16_t MIDI_NOTE_TO_DAC_VOLTAGE(uint8_t note){
+uint16_t MIDI_NOTE_TO_DAC_VOLTAGE(uint8_t note){ //Converts input midi note to 12bit int for CV DAC
     uint16_t MIDI_Range = MIDI_MAX - MIDI_MIN; 
     uint16_t DAC_Range = 4095;
     uint16_t DAC_Channel_Val = ((static_cast<uint16_t>(note) - MIDI_MIN) * DAC_Range) / MIDI_Range;
@@ -227,7 +219,7 @@ uint16_t MIDI_NOTE_TO_DAC_VOLTAGE(uint8_t note){
     return DAC_Channel_Val;
 }
 
-uint16_t OSC_AMP_TO_DAC_VOLTAGE(float value){
+uint16_t OSC_AMP_TO_DAC_VOLTAGE(float value){ //unused function for osc
     float OSC_RANGE = 1.0f - (-1.0f); 
     float DAC_Range = 4095;
     float DAC_Channel_Val = ((value - (-1.0f)) * DAC_Range) / OSC_RANGE;
@@ -235,7 +227,7 @@ uint16_t OSC_AMP_TO_DAC_VOLTAGE(float value){
     return static_cast<uint16_t>(DAC_Channel_Val);
 }
 
-uint16_t Env_AMP_TO_DAC_VOLTAGE(float value){
+uint16_t Env_AMP_TO_DAC_VOLTAGE(float value){ //converts envelope amplitude range (ranging from 0 - 1) to 12-bit int value for envelope DAC
     float Env_RANGE = 1.0f; 
     float DAC_Range = 4095;
     float DAC_Channel_Val = ((value) * DAC_Range) / Env_RANGE;
@@ -307,7 +299,7 @@ int main(void)
             DAC_Multi_Channel_Params[i] = DAC_I2C_GENERATE_MULTI_CHANNEL_PARAMS(1,0,0,0);
         }
 
-    /** initialize sine wave osc
+    /** initialize sine wave osc used to test DAC, outdated
     Oscillator sine_osc;
     sine_osc.Init(I2C_SAMPLE_RATE);
     sine_osc.SetFreq(100);
