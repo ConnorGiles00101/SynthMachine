@@ -6,4 +6,4 @@ Firmware requires a daisy seed build environment to compile, see daisy seed star
 Very much a prototype.
 
 Credit to timMJN and his Polymorph VCO module: https://github.com/TimMJN/Polymorph-VCO
-His designs were helpful reference whilst learning modular synth standards regarding audio and CV voltage ranges and impedance.
+His designs were helpful reference whilst learning modular synth i/o and standards regarding audio and CV voltage ranges and impedance.
