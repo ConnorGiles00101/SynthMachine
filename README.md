@@ -4,3 +4,6 @@ A set of Modular synthesizer modules designed around the SSI2130 VCO, SSI2140 Mu
 Firmware requires a daisy seed build environment to compile, see daisy seed startup guide (https://daisy.audio/tutorials/cpp-dev-env/), requires updated libdaisy, daisysp, etc... to be cloned from relevant repos.
 
 Very much a prototype.
+
+Credit to timMJN and his Polymorph VCO module: https://github.com/TimMJN/Polymorph-VCO
+His designs were helpful reference whilst learning modular synth standards regarding audio and CV voltage ranges and impedance.
