@@ -6,8 +6,10 @@
 	(paper "A2")
 	(title_block
 		(title "Basic VCO")
-		(date "2026-02-12")
+		(date "2026-02-27")
 		(rev "1")
+		(comment 2 "his designs were a big help while figuring out how to handle modular synth I/O")
+		(comment 3 "Credit to Polymorph VCO by timMJN, ")
 	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:TL072"
@@ -19632,10 +19634,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "8f0f01a1-11c1-4fc9-b0ee-66f07a9dbb75")
+			(uuid "8f0f01a1-11c1-4fc9-b0ee-66f07a9dbb76")
 		)
 		(pin "2"
-			(uuid "9ba073d5-16e5-449c-bbd2-7f4b8d9fe30a")
+			(uuid "9ba073d5-16e5-449c-bbd2-7f4b8d9fe30b")
 		)
 		(instances
 			(project ""
@@ -23790,7 +23792,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "3f77bf2a-2580-426d-9177-fa5c886f644c")
+			(uuid "3f77bf2a-2580-426d-9177-fa5c886f644d")
 		)
 		(instances
 			(project ""
