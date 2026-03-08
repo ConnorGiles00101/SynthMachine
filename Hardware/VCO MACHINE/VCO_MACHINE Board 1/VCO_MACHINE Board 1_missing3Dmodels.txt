@@ -1,0 +1,14 @@
+### Missing 3D models - created on 2026-03-08 01:47
+### Printed by checking_3D_models plugin
+Board file: C:/Users/bruh/Desktop/SynthMachine/Hardware/VCO MACHINE/VCO_MACHINE Board 1/VCO_MACHINE Board 1.kicad_pcb
+3D missing models written to:
+C:\Users\bruh\Desktop\SynthMachine\Hardware\VCO MACHINE\VCO_MACHINE Board 1\VCO_MACHINE Board 1_missing3Dmodels.txt
+-------
+('FM_TGL1', '${LIB}/Molex_90Grad_6er.STEP')
+('PM_FM1', '${LIB}/Molex_90Grad_3er.STEP')
+('SAW_DIR1', '${LIB}/Molex_90Grad_3er.STEP')
+('RV1', '${LIB}/Molex_90Grad_3er.STEP')
+('PLS_TGL1', '${LIB}/Molex_90Grad_3er.STEP')
+-------
+NUM of 3D missing models:5
+checked extensions ['.stp', '.step', '.stpZ']

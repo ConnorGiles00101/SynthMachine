@@ -1,0 +1,105 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "85e84b57-1b44-4eef-b41f-b4651f320b5c")
+	(paper "A2")
+	(title_block
+		(title "Basic VCO")
+		(date "2026-02-27")
+		(rev "1")
+		(comment 2 "his designs were a big help while figuring out how to handle modular synth I/O")
+		(comment 3 "Credit to Polymorph VCO by timMJN, ")
+	)
+	(lib_symbols)
+	(sheet
+		(at 25.4 24.13)
+		(size 200.66 186.69)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a4d3c7dc-6025-47ea-8220-90a167243114")
+		(property "Sheetname" "B1"
+			(at 25.4 23.4184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "B1.kicad_sch"
+			(at 25.4 211.4046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Basic_VCO"
+				(path "/85e84b57-1b44-4eef-b41f-b4651f320b5c"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 233.68 24.13)
+		(size 195.58 184.15)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a9ac05b1-58d1-4f9c-b96f-b28cdd8064b5")
+		(property "Sheetname" "B2"
+			(at 233.68 23.4184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "B2.kicad_sch"
+			(at 233.68 208.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Basic_VCO"
+				(path "/85e84b57-1b44-4eef-b41f-b4651f320b5c"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

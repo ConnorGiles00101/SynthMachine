@@ -2665,6 +2665,89 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Reference_Voltage:TL431LP"
 			(pin_numbers
 				(hide yes)
@@ -13471,7 +13554,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "PCM_JLCPCB:C_0805"
 			(at 26.3652 40.64 0)
 			(effects
 				(font
@@ -13491,6 +13574,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 25.4 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C73142"
+			(at 19.812 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13737,7 +13829,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "PCM_JLCPCB:R_1206"
 			(at 26.416 54.864 90)
 			(effects
 				(font
@@ -13960,7 +14052,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0814a340-4f2a-4a42-bff0-2a808d306290")
-		(property "Reference" "SW3"
+		(property "Reference" "FM_TGL1"
 			(at 520.7 38.1 0)
 			(effects
 				(font
@@ -13976,7 +14068,7 @@
 				)
 			)
 		)
-		(property "Footprint" "AN12SECQE:SW6_ANT21SECQE_CRS"
+		(property "Footprint" "toggleswitches:SW6_ANT21SECQE_CRS"
 			(at 520.7 46.99 0)
 			(effects
 				(font
@@ -14024,7 +14116,7 @@
 		(instances
 			(project ""
 				(path "/85e84b57-1b44-4eef-b41f-b4651f320b5c"
-					(reference "SW3")
+					(reference "FM_TGL1")
 					(unit 1)
 				)
 			)
@@ -14055,7 +14147,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Bourns PV36Y:TRIM_PV36Y502C01B00"
+		(property "Footprint" "Bourns PV36Y:TRIM_PV36Y203C01B00"
 			(at 110.49 119.38 0)
 			(effects
 				(font
@@ -15128,6 +15220,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C307331"
+			(at 203.2 35.5662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3e80cc1f-82c3-4ef8-8f7d-7cb9bc00ba53")
 		)
@@ -15289,7 +15390,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "136e2d1f-7f18-47e0-80eb-cf3605b75251")
-		(property "Reference" "J1"
+		(property "Reference" "NOTE1"
 			(at 28.575 209.55 0)
 			(effects
 				(font
@@ -15344,7 +15445,7 @@
 		(instances
 			(project "Basic_VCO"
 				(path "/85e84b57-1b44-4eef-b41f-b4651f320b5c"
-					(reference "J1")
+					(reference "NOTE1")
 					(unit 1)
 				)
 			)
@@ -15939,7 +16040,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "PCM_JLCPCB:R_1206"
 			(at 258.826 219.456 90)
 			(effects
 				(font
@@ -16629,7 +16730,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "PCM_JLCPCB:R_1206"
 			(at 335.026 164.846 90)
 			(effects
 				(font
@@ -17084,6 +17185,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C307331"
+			(at 182.88 25.4062 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6b79044f-2b0b-45de-9c17-72d3a91bf3a7")
 		)
@@ -17100,10 +17210,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 20.32 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "28518288-7e30-4ff3-85c5-351ce241a437")
+		(property "Reference" "H1"
+			(at 22.86 124.4599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 22.86 126.9999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 20.32 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 20.32 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 20.32 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/85e84b57-1b44-4eef-b41f-b4651f320b5c"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Amplifier_Operational:TL074")
 		(at 114.3 195.58 0)
 		(mirror x)
-		(unit 1)
+		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -17198,7 +17372,7 @@
 			(project ""
 				(path "/85e84b57-1b44-4eef-b41f-b4651f320b5c"
 					(reference "U7")
-					(unit 1)
+					(unit 3)
 				)
 			)
 		)
@@ -17281,7 +17455,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2bc24c0b-6a9d-43f2-854b-1a5a6ee6966d")
-		(property "Reference" "J2"
+		(property "Reference" "FM1"
 			(at 28.575 241.3 0)
 			(effects
 				(font
@@ -17336,7 +17510,7 @@
 		(instances
 			(project "Basic_VCO"
 				(path "/85e84b57-1b44-4eef-b41f-b4651f320b5c"
-					(reference "J2")
+					(reference "FM1")
 					(unit 1)
 				)
 			)
@@ -17552,7 +17726,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2f3d7217-da4c-47fc-b51e-f685a9341eb9")
-		(property "Reference" "J5"
+		(property "Reference" "HSYNC1"
 			(at 116.205 278.13 0)
 			(effects
 				(font
@@ -17607,7 +17781,7 @@
 		(instances
 			(project "Basic_VCO"
 				(path "/85e84b57-1b44-4eef-b41f-b4651f320b5c"
-					(reference "J5")
+					(reference "HSYNC1")
 					(unit 1)
 				)
 			)
@@ -17660,6 +17834,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 45.72 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C307331"
+			(at 49.022 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17802,46 +17985,46 @@
 			)
 		)
 		(pin "5"
-			(uuid "b2b83532-2f49-4d88-b25f-2f57d9bc2298")
+			(uuid "b2b83532-2f49-4d88-b25f-2f57d9bc2299")
 		)
 		(pin "12"
-			(uuid "9004271e-4c77-43df-a7ee-1faa01d24236")
+			(uuid "9004271e-4c77-43df-a7ee-1faa01d24237")
 		)
 		(pin "3"
-			(uuid "e2e7c49a-020c-4a25-bb27-6e700f6cd6d8")
+			(uuid "e2e7c49a-020c-4a25-bb27-6e700f6cd6d9")
 		)
 		(pin "6"
-			(uuid "1a0b7bba-db92-4c79-9181-ddd469642955")
+			(uuid "1a0b7bba-db92-4c79-9181-ddd469642956")
 		)
 		(pin "7"
-			(uuid "a3f8f896-0a4e-408e-9ca9-581cadf0a28b")
+			(uuid "a3f8f896-0a4e-408e-9ca9-581cadf0a28c")
 		)
 		(pin "9"
 			(uuid "6a0ca100-4540-4184-ae39-a0f7da7affbc")
 		)
 		(pin "1"
-			(uuid "f4cea899-101c-4d39-befa-b52f4d5b7514")
+			(uuid "f4cea899-101c-4d39-befa-b52f4d5b7515")
 		)
 		(pin "13"
-			(uuid "7d1d3593-12b6-48b7-8a3e-e0fc6da62811")
+			(uuid "7d1d3593-12b6-48b7-8a3e-e0fc6da62812")
 		)
 		(pin "8"
 			(uuid "a559683e-6221-4640-a3f0-0881bee556c7")
 		)
 		(pin "2"
-			(uuid "9dcde156-3f16-4278-b42c-b556a8042e78")
+			(uuid "9dcde156-3f16-4278-b42c-b556a8042e79")
 		)
 		(pin "10"
 			(uuid "b5d56692-47f6-44e3-b07a-cd91d41c3561")
 		)
 		(pin "11"
-			(uuid "7de18b08-ec55-45dd-8344-a0aa01be765e")
+			(uuid "7de18b08-ec55-45dd-8344-a0aa01be765f")
 		)
 		(pin "14"
-			(uuid "e5924f03-67d9-49ee-8a72-51583f9167ab")
+			(uuid "e5924f03-67d9-49ee-8a72-51583f9167ac")
 		)
 		(pin "4"
-			(uuid "53268980-b8d6-4330-b5eb-5fac090697e2")
+			(uuid "53268980-b8d6-4330-b5eb-5fac090697e3")
 		)
 		(instances
 			(project "Basic_VCO"
@@ -17862,7 +18045,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "317b14f2-7dcd-45d6-b1d8-28d0c950f517")
-		(property "Reference" "J3"
+		(property "Reference" "SSYNC1"
 			(at 28.575 278.13 0)
 			(effects
 				(font
@@ -17917,7 +18100,7 @@
 		(instances
 			(project "Basic_VCO"
 				(path "/85e84b57-1b44-4eef-b41f-b4651f320b5c"
-					(reference "J3")
+					(reference "SSYNC1")
 					(unit 1)
 				)
 			)
@@ -18014,7 +18197,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Bourns PV36Y:TRIM_PV36Y502C01B00"
+		(property "Footprint" "Bourns PV36Y:TRIM_PV36Y203C01B00"
 			(at 46.99 119.38 0)
 			(effects
 				(font
@@ -18086,7 +18269,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "PCM_JLCPCB:R_1206"
 			(at 114.554 131.826 90)
 			(effects
 				(font
@@ -18280,7 +18463,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "21"
+		(property "Value" "20k"
 			(at 285.75 115.5699 0)
 			(effects
 				(font
@@ -18577,7 +18760,7 @@
 		(lib_id "Amplifier_Operational:TL074")
 		(at 172.72 195.58 0)
 		(mirror x)
-		(unit 3)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -18672,7 +18855,7 @@
 			(project ""
 				(path "/85e84b57-1b44-4eef-b41f-b4651f320b5c"
 					(reference "U7")
-					(unit 3)
+					(unit 1)
 				)
 			)
 		)
@@ -18807,6 +18990,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 154.94 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C81598"
+			(at 154.94 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19089,6 +19281,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C307331"
+			(at 52.07 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0fa89fe3-0581-4176-94d5-13cc5d41121a")
 		)
@@ -19315,7 +19516,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "432f369c-7e37-43b6-a66e-6e15eb72ce70")
-		(property "Reference" "SW4"
+		(property "Reference" "SAW_DIR1"
 			(at 520.7 68.58 0)
 			(effects
 				(font
@@ -19370,7 +19571,7 @@
 		(instances
 			(project ""
 				(path "/85e84b57-1b44-4eef-b41f-b4651f320b5c"
-					(reference "SW4")
+					(reference "SAW_DIR1")
 					(unit 1)
 				)
 			)
@@ -19421,6 +19622,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 59.69 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C60133"
+			(at 59.69 151.384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19854,6 +20064,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 27.94 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48e63d51-40c7-42ab-85b4-ce8b97a292a1")
+		(property "Reference" "H2"
+			(at 30.48 124.4599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 30.48 126.9999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 27.94 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 27.94 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 27.94 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/85e84b57-1b44-4eef-b41f-b4651f320b5c"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 39.37 237.49 0)
 		(unit 1)
@@ -19982,6 +20256,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 289.56 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C81598"
+			(at 289.56 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20193,6 +20476,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C307331"
+			(at 83.82 35.5662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b972ebab-8490-4f42-a36e-dbb2b07668c6")
 		)
@@ -20359,7 +20651,7 @@
 				)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10uF"
 			(at 406.4 52.07 90)
 			(effects
 				(font
@@ -20367,13 +20659,12 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "PCM_JLCPCB:C_0805"
 			(at 410.21 56.1848 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
@@ -20387,6 +20678,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 406.4 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2932476"
+			(at 406.4 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20435,7 +20735,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "PCM_JLCPCB:R_1206"
 			(at 54.864 58.674 90)
 			(effects
 				(font
@@ -20702,6 +21002,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C60133"
+			(at 119.38 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f20ebdcf-d9f8-45b1-89c0-3b65023e9f54")
 		)
@@ -20735,7 +21044,7 @@
 				)
 			)
 		)
-		(property "Value" "100p"
+		(property "Value" "100pF"
 			(at 440.69 34.29 90)
 			(effects
 				(font
@@ -20763,6 +21072,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 440.69 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C106200"
+			(at 440.69 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20899,6 +21217,15 @@
 		)
 		(property "Description" "20V 1A Schottky Barrier Rectifier Diode, DO-41"
 			(at 143.51 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C727113"
+			(at 146.05 262.5724 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21111,46 +21438,46 @@
 			)
 		)
 		(pin "5"
-			(uuid "b2b83532-2f49-4d88-b25f-2f57d9bc2299")
+			(uuid "b2b83532-2f49-4d88-b25f-2f57d9bc229a")
 		)
 		(pin "12"
-			(uuid "9004271e-4c77-43df-a7ee-1faa01d24237")
+			(uuid "9004271e-4c77-43df-a7ee-1faa01d24238")
 		)
 		(pin "3"
-			(uuid "e2e7c49a-020c-4a25-bb27-6e700f6cd6d9")
+			(uuid "e2e7c49a-020c-4a25-bb27-6e700f6cd6da")
 		)
 		(pin "6"
-			(uuid "1a0b7bba-db92-4c79-9181-ddd469642956")
+			(uuid "1a0b7bba-db92-4c79-9181-ddd469642957")
 		)
 		(pin "7"
-			(uuid "a3f8f896-0a4e-408e-9ca9-581cadf0a28c")
+			(uuid "a3f8f896-0a4e-408e-9ca9-581cadf0a28d")
 		)
 		(pin "9"
 			(uuid "c6799421-1498-4349-ac9d-f707783b62ea")
 		)
 		(pin "1"
-			(uuid "f4cea899-101c-4d39-befa-b52f4d5b7515")
+			(uuid "f4cea899-101c-4d39-befa-b52f4d5b7516")
 		)
 		(pin "13"
-			(uuid "7d1d3593-12b6-48b7-8a3e-e0fc6da62812")
+			(uuid "7d1d3593-12b6-48b7-8a3e-e0fc6da62813")
 		)
 		(pin "8"
 			(uuid "75e4dbbf-9725-47c0-b293-d24583d98c8f")
 		)
 		(pin "2"
-			(uuid "9dcde156-3f16-4278-b42c-b556a8042e79")
+			(uuid "9dcde156-3f16-4278-b42c-b556a8042e7a")
 		)
 		(pin "10"
 			(uuid "013d4ab8-078c-48e2-b1db-3bc9a52f3118")
 		)
 		(pin "11"
-			(uuid "7de18b08-ec55-45dd-8344-a0aa01be765f")
+			(uuid "7de18b08-ec55-45dd-8344-a0aa01be7660")
 		)
 		(pin "14"
-			(uuid "e5924f03-67d9-49ee-8a72-51583f9167ac")
+			(uuid "e5924f03-67d9-49ee-8a72-51583f9167ad")
 		)
 		(pin "4"
-			(uuid "53268980-b8d6-4330-b5eb-5fac090697e3")
+			(uuid "53268980-b8d6-4330-b5eb-5fac090697e4")
 		)
 		(instances
 			(project ""
@@ -21701,7 +22028,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "PCM_JLCPCB:R_1206"
 			(at 258.826 187.706 90)
 			(effects
 				(font
@@ -21771,7 +22098,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "PCM_JLCPCB:C_0805"
 			(at 105.1052 156.21 0)
 			(effects
 				(font
@@ -21791,6 +22118,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 104.14 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C326569"
+			(at 107.95 151.1299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22010,6 +22346,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C8545"
+			(at 457.2 83.8201 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "bcc21b02-babd-4e11-bb4d-376b3f6a8541")
 		)
@@ -22217,40 +22562,40 @@
 			)
 		)
 		(pin "8"
-			(uuid "55d3e6ac-e8a9-4590-8ecb-e3c855134721")
+			(uuid "55d3e6ac-e8a9-4590-8ecb-e3c855134722")
 		)
 		(pin "5"
-			(uuid "984e574a-a901-42ec-a731-38931e69db40")
+			(uuid "984e574a-a901-42ec-a731-38931e69db41")
 		)
 		(pin "2"
-			(uuid "bfce638d-f7c6-4a40-95fc-7b521f78e91a")
+			(uuid "bfce638d-f7c6-4a40-95fc-7b521f78e91b")
 		)
 		(pin "6"
-			(uuid "81e6207a-8c17-447b-80a2-c4f840aa1724")
+			(uuid "81e6207a-8c17-447b-80a2-c4f840aa1725")
 		)
 		(pin "9"
-			(uuid "8510e71d-5812-4130-aa2b-5c9f416646ab")
+			(uuid "8510e71d-5812-4130-aa2b-5c9f416646ac")
 		)
 		(pin "10"
-			(uuid "d3242117-4d9b-4af7-9db6-7d746e4d69e5")
+			(uuid "d3242117-4d9b-4af7-9db6-7d746e4d69e6")
 		)
 		(pin "13"
-			(uuid "b41fbce0-be86-4d4f-aad2-ca5624a54e6d")
+			(uuid "b41fbce0-be86-4d4f-aad2-ca5624a54e6e")
 		)
 		(pin "3"
-			(uuid "ea868f40-3acb-49a7-af29-b55f16df6b49")
+			(uuid "ea868f40-3acb-49a7-af29-b55f16df6b4a")
 		)
 		(pin "1"
-			(uuid "d3f376bc-7c62-4fcb-8e53-2780c64860de")
+			(uuid "d3f376bc-7c62-4fcb-8e53-2780c64860df")
 		)
 		(pin "14"
-			(uuid "e362abd7-21f0-4c79-bd3d-36565aa9c59a")
+			(uuid "e362abd7-21f0-4c79-bd3d-36565aa9c59b")
 		)
 		(pin "7"
-			(uuid "12e8a3da-862e-4e3f-8a90-ad660a14287b")
+			(uuid "12e8a3da-862e-4e3f-8a90-ad660a14287c")
 		)
 		(pin "12"
-			(uuid "5af4b406-e19a-4738-ad98-83ccf1613556")
+			(uuid "5af4b406-e19a-4738-ad98-83ccf1613557")
 		)
 		(pin "4"
 			(uuid "b578fec5-8f15-4b1e-a5b9-a6747d2be225")
@@ -23085,7 +23430,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100p"
+		(property "Value" "100pF"
 			(at 491.49 125.7299 0)
 			(effects
 				(font
@@ -23114,6 +23459,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 487.68 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C106200"
+			(at 491.49 123.1899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23758,6 +24112,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C727113"
+			(at 58.42 262.5724 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6fc8c6ea-17c4-4561-abe3-ae45ae16ff43")
 		)
@@ -24179,7 +24542,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7de0268a-a482-4748-a1e8-7e70573b6543")
-		(property "Reference" "J12"
+		(property "Reference" "PULSE1"
 			(at 346.075 198.12 0)
 			(effects
 				(font
@@ -24234,7 +24597,7 @@
 		(instances
 			(project "Basic_VCO"
 				(path "/85e84b57-1b44-4eef-b41f-b4651f320b5c"
-					(reference "J12")
+					(reference "PULSE1")
 					(unit 1)
 				)
 			)
@@ -24562,28 +24925,28 @@
 			)
 		)
 		(pin "5"
-			(uuid "b2b83532-2f49-4d88-b25f-2f57d9bc229a")
+			(uuid "b2b83532-2f49-4d88-b25f-2f57d9bc229b")
 		)
 		(pin "3"
-			(uuid "e2e7c49a-020c-4a25-bb27-6e700f6cd6da")
+			(uuid "e2e7c49a-020c-4a25-bb27-6e700f6cd6db")
 		)
 		(pin "6"
-			(uuid "1a0b7bba-db92-4c79-9181-ddd469642957")
+			(uuid "1a0b7bba-db92-4c79-9181-ddd469642958")
 		)
 		(pin "7"
-			(uuid "a3f8f896-0a4e-408e-9ca9-581cadf0a28d")
+			(uuid "a3f8f896-0a4e-408e-9ca9-581cadf0a28e")
 		)
 		(pin "1"
-			(uuid "f4cea899-101c-4d39-befa-b52f4d5b7516")
+			(uuid "f4cea899-101c-4d39-befa-b52f4d5b7517")
 		)
 		(pin "8"
 			(uuid "75e4dbbf-9725-47c0-b293-d24583d98c90")
 		)
 		(pin "2"
-			(uuid "9dcde156-3f16-4278-b42c-b556a8042e7a")
+			(uuid "9dcde156-3f16-4278-b42c-b556a8042e7b")
 		)
 		(pin "4"
-			(uuid "53268980-b8d6-4330-b5eb-5fac090697e4")
+			(uuid "53268980-b8d6-4330-b5eb-5fac090697e5")
 		)
 		(instances
 			(project ""
@@ -24611,7 +24974,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "0.1uF"
 			(at 459.74 143.51 90)
 			(effects
 				(font
@@ -24639,6 +25002,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 459.74 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C307331"
+			(at 459.74 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25094,6 +25466,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C307331"
+			(at 121.92 35.5662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7c3a8ec5-a252-44ea-ae87-9d34a5f47019")
 		)
@@ -25271,7 +25652,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "PCM_JLCPCB:C_0805"
 			(at 26.3652 68.58 0)
 			(effects
 				(font
@@ -25291,6 +25672,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 25.4 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C73142"
+			(at 29.21 63.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25493,7 +25883,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "88d44f6d-0cc6-4fd9-89bb-2cb72217d9b9")
-		(property "Reference" "SW2"
+		(property "Reference" "PM_FM1"
 			(at 394.97 50.8 0)
 			(effects
 				(font
@@ -25548,7 +25938,7 @@
 		(instances
 			(project "Basic_VCO"
 				(path "/85e84b57-1b44-4eef-b41f-b4651f320b5c"
-					(reference "SW2")
+					(reference "PM_FM1")
 					(unit 1)
 				)
 			)
@@ -25677,13 +26067,13 @@
 			(uuid "d26153fb-eecd-4682-a9cc-ac2f66582030")
 		)
 		(pin "5"
-			(uuid "984e574a-a901-42ec-a731-38931e69db3d")
+			(uuid "984e574a-a901-42ec-a731-38931e69db42")
 		)
 		(pin "2"
-			(uuid "bfce638d-f7c6-4a40-95fc-7b521f78e917")
+			(uuid "bfce638d-f7c6-4a40-95fc-7b521f78e91c")
 		)
 		(pin "6"
-			(uuid "81e6207a-8c17-447b-80a2-c4f840aa1721")
+			(uuid "81e6207a-8c17-447b-80a2-c4f840aa1726")
 		)
 		(pin "9"
 			(uuid "67c19b0f-4a21-4498-99e8-15bb181f4df7")
@@ -25692,28 +26082,28 @@
 			(uuid "9fd4b8e5-71b8-4b27-b5ca-f47d28c0d882")
 		)
 		(pin "13"
-			(uuid "b41fbce0-be86-4d4f-aad2-ca5624a54e6a")
+			(uuid "b41fbce0-be86-4d4f-aad2-ca5624a54e6b")
 		)
 		(pin "3"
-			(uuid "ea868f40-3acb-49a7-af29-b55f16df6b46")
+			(uuid "ea868f40-3acb-49a7-af29-b55f16df6b4b")
 		)
 		(pin "1"
-			(uuid "d3f376bc-7c62-4fcb-8e53-2780c64860db")
+			(uuid "d3f376bc-7c62-4fcb-8e53-2780c64860e0")
 		)
 		(pin "14"
-			(uuid "e362abd7-21f0-4c79-bd3d-36565aa9c597")
+			(uuid "e362abd7-21f0-4c79-bd3d-36565aa9c598")
 		)
 		(pin "7"
-			(uuid "12e8a3da-862e-4e3f-8a90-ad660a142878")
+			(uuid "12e8a3da-862e-4e3f-8a90-ad660a14287d")
 		)
 		(pin "12"
-			(uuid "5af4b406-e19a-4738-ad98-83ccf1613553")
+			(uuid "5af4b406-e19a-4738-ad98-83ccf1613554")
 		)
 		(pin "4"
-			(uuid "b578fec5-8f15-4b1e-a5b9-a6747d2be222")
+			(uuid "b578fec5-8f15-4b1e-a5b9-a6747d2be226")
 		)
 		(pin "11"
-			(uuid "1b2b2436-9e13-4113-bbfd-3eba6e2f77ed")
+			(uuid "1b2b2436-9e13-4113-bbfd-3eba6e2f77ee")
 		)
 		(instances
 			(project "Basic_VCO"
@@ -25867,7 +26257,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8de31710-df33-4c68-99a9-e70616961236")
-		(property "Reference" "J7"
+		(property "Reference" "TRI1"
 			(at 269.875 170.18 0)
 			(effects
 				(font
@@ -25922,7 +26312,7 @@
 		(instances
 			(project ""
 				(path "/85e84b57-1b44-4eef-b41f-b4651f320b5c"
-					(reference "J7")
+					(reference "TRI1")
 					(unit 1)
 				)
 			)
@@ -26052,6 +26442,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C307331"
+			(at 161.29 25.4062 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "58999e76-1e5c-4d54-8054-998dda05f9bb")
 		)
@@ -26076,7 +26475,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "921f1a0c-f5ef-49d9-a524-9d774a09d268")
-		(property "Reference" "J8"
+		(property "Reference" "SAW1"
 			(at 269.875 195.58 0)
 			(effects
 				(font
@@ -26131,7 +26530,7 @@
 		(instances
 			(project "Basic_VCO"
 				(path "/85e84b57-1b44-4eef-b41f-b4651f320b5c"
-					(reference "J8")
+					(reference "SAW1")
 					(unit 1)
 				)
 			)
@@ -26163,7 +26562,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "PCM_JLCPCB:R_1206"
 			(at 335.026 190.246 90)
 			(effects
 				(font
@@ -26386,6 +26785,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 200.66 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C307331"
+			(at 203.2 25.4062 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26654,6 +27062,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 81.28 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C307331"
+			(at 83.82 25.4062 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27186,7 +27603,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a4da4b3e-2c06-4134-acb2-d0e2e2de18f6")
-		(property "Reference" "J4"
+		(property "Reference" "CROSS2"
 			(at 83.312 204.47 0)
 			(effects
 				(font
@@ -27241,7 +27658,7 @@
 		(instances
 			(project "Basic_VCO"
 				(path "/85e84b57-1b44-4eef-b41f-b4651f320b5c"
-					(reference "J4")
+					(reference "CROSS2")
 					(unit 1)
 				)
 			)
@@ -27273,7 +27690,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "PCM_JLCPCB:R_1206"
 			(at 334.264 225.044 90)
 			(effects
 				(font
@@ -27363,6 +27780,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 138.43 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C307331"
+			(at 140.97 35.5662 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27708,6 +28134,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C727113"
+			(at 58.42 272.7324 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b8c497d5-0266-4b55-8c8d-4ba61d2efa9b")
 		)
@@ -28008,7 +28443,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "0.1uF"
 			(at 473.71 101.6 90)
 			(effects
 				(font
@@ -28036,6 +28471,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 473.71 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C307331"
+			(at 473.71 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28254,6 +28698,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C307331"
+			(at 121.92 25.4062 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f4f7c583-51f4-4fd7-a67f-7bbf7a9b84b9")
 		)
@@ -28412,7 +28865,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b2cc9e05-c4c9-44f1-9265-0b92f15f847a")
-		(property "Reference" "J9"
+		(property "Reference" "SINE1"
 			(at 269.875 227.33 0)
 			(effects
 				(font
@@ -28467,7 +28920,7 @@
 		(instances
 			(project "Basic_VCO"
 				(path "/85e84b57-1b44-4eef-b41f-b4651f320b5c"
-					(reference "J9")
+					(reference "SINE1")
 					(unit 1)
 				)
 			)
@@ -28728,6 +29181,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C307331"
+			(at 182.88 35.5662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "82993d9c-8765-4959-b3f0-fc410119340e")
 		)
@@ -28752,7 +29214,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b6aef132-585b-432c-8d2c-2b22dd42af9e")
-		(property "Reference" "J10"
+		(property "Reference" "CROSS1"
 			(at 344.805 234.95 0)
 			(effects
 				(font
@@ -28807,7 +29269,7 @@
 		(instances
 			(project "Basic_VCO"
 				(path "/85e84b57-1b44-4eef-b41f-b4651f320b5c"
-					(reference "J10")
+					(reference "CROSS1")
 					(unit 1)
 				)
 			)
@@ -29164,6 +29626,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 50.8 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C60133"
+			(at 50.8 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30227,7 +30698,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "PCM_JLCPCB:R_1206"
 			(at 26.416 26.924 90)
 			(effects
 				(font
@@ -30631,7 +31102,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "PCM_JLCPCB:R_1206"
 			(at 258.826 162.306 90)
 			(effects
 				(font
@@ -30721,6 +31192,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 158.75 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C307331"
+			(at 161.29 35.5662 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31275,7 +31755,7 @@
 				)
 			)
 		)
-		(property "Value" "100p"
+		(property "Value" "100pF"
 			(at 469.9 33.02 90)
 			(effects
 				(font
@@ -31310,6 +31790,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C106200"
+			(at 469.9 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "015336f0-e319-4dda-8627-7596ce81c867")
 		)
@@ -31335,7 +31824,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d93839bc-a3cd-4c72-8d6b-cdf71fe62c04")
-		(property "Reference" "SW1"
+		(property "Reference" "PLS_TGL1"
 			(at 184.15 104.14 0)
 			(effects
 				(font
@@ -31390,7 +31879,7 @@
 		(instances
 			(project "Basic_VCO"
 				(path "/85e84b57-1b44-4eef-b41f-b4651f320b5c"
-					(reference "SW1")
+					(reference "PLS_TGL1")
 					(unit 1)
 				)
 			)
@@ -31750,28 +32239,28 @@
 			)
 		)
 		(pin "5"
-			(uuid "b2b83532-2f49-4d88-b25f-2f57d9bc229b")
+			(uuid "b2b83532-2f49-4d88-b25f-2f57d9bc229c")
 		)
 		(pin "3"
-			(uuid "e2e7c49a-020c-4a25-bb27-6e700f6cd6db")
+			(uuid "e2e7c49a-020c-4a25-bb27-6e700f6cd6dc")
 		)
 		(pin "6"
-			(uuid "1a0b7bba-db92-4c79-9181-ddd469642958")
+			(uuid "1a0b7bba-db92-4c79-9181-ddd469642959")
 		)
 		(pin "7"
-			(uuid "a3f8f896-0a4e-408e-9ca9-581cadf0a28e")
+			(uuid "a3f8f896-0a4e-408e-9ca9-581cadf0a28f")
 		)
 		(pin "1"
-			(uuid "f4cea899-101c-4d39-befa-b52f4d5b7517")
+			(uuid "f4cea899-101c-4d39-befa-b52f4d5b7518")
 		)
 		(pin "8"
 			(uuid "75e4dbbf-9725-47c0-b293-d24583d98c91")
 		)
 		(pin "2"
-			(uuid "9dcde156-3f16-4278-b42c-b556a8042e7b")
+			(uuid "9dcde156-3f16-4278-b42c-b556a8042e7c")
 		)
 		(pin "4"
-			(uuid "53268980-b8d6-4330-b5eb-5fac090697e5")
+			(uuid "53268980-b8d6-4330-b5eb-5fac090697e6")
 		)
 		(instances
 			(project ""
@@ -32095,7 +32584,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e1ddff79-1362-40aa-8c6d-b94a68ba64e9")
-		(property "Reference" "J11"
+		(property "Reference" "SQUARE1"
 			(at 346.075 172.72 0)
 			(effects
 				(font
@@ -32150,7 +32639,7 @@
 		(instances
 			(project "Basic_VCO"
 				(path "/85e84b57-1b44-4eef-b41f-b4651f320b5c"
-					(reference "J11")
+					(reference "SQUARE1")
 					(unit 1)
 				)
 			)
@@ -32296,7 +32785,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e45c118c-3dfc-4a53-9867-9b9fac022803")
-		(property "Reference" "SW3"
+		(property "Reference" "FM_TGL1"
 			(at 520.7 53.34 0)
 			(effects
 				(font
@@ -32312,7 +32801,7 @@
 				)
 			)
 		)
-		(property "Footprint" "AN12SECQE:SW6_ANT21SECQE_CRS"
+		(property "Footprint" "toggleswitches:SW6_ANT21SECQE_CRS"
 			(at 520.7 62.23 0)
 			(effects
 				(font
@@ -32360,7 +32849,7 @@
 		(instances
 			(project ""
 				(path "/85e84b57-1b44-4eef-b41f-b4651f320b5c"
-					(reference "SW3")
+					(reference "FM_TGL1")
 					(unit 2)
 				)
 			)
@@ -32383,7 +32872,7 @@
 				)
 			)
 		)
-		(property "Value" "100p"
+		(property "Value" "100pF"
 			(at 320.04 207.01 90)
 			(effects
 				(font
@@ -32411,6 +32900,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 320.04 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C106200"
+			(at 320.04 204.724 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32481,6 +32979,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 100.33 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C307331"
+			(at 102.87 25.4062 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33002,7 +33509,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "PCM_JLCPCB:R_1206"
 			(at 52.324 30.734 90)
 			(effects
 				(font
@@ -33853,25 +34360,25 @@
 			)
 		)
 		(pin "5"
-			(uuid "b2b83532-2f49-4d88-b25f-2f57d9bc229c")
+			(uuid "b2b83532-2f49-4d88-b25f-2f57d9bc229d")
 		)
 		(pin "12"
 			(uuid "9004271e-4c77-43df-a7ee-1faa01d2423a")
 		)
 		(pin "3"
-			(uuid "e2e7c49a-020c-4a25-bb27-6e700f6cd6dc")
+			(uuid "e2e7c49a-020c-4a25-bb27-6e700f6cd6dd")
 		)
 		(pin "6"
-			(uuid "1a0b7bba-db92-4c79-9181-ddd469642959")
+			(uuid "1a0b7bba-db92-4c79-9181-ddd46964295a")
 		)
 		(pin "7"
-			(uuid "a3f8f896-0a4e-408e-9ca9-581cadf0a28f")
+			(uuid "a3f8f896-0a4e-408e-9ca9-581cadf0a290")
 		)
 		(pin "9"
 			(uuid "c6799421-1498-4349-ac9d-f707783b62ed")
 		)
 		(pin "1"
-			(uuid "f4cea899-101c-4d39-befa-b52f4d5b7518")
+			(uuid "f4cea899-101c-4d39-befa-b52f4d5b7519")
 		)
 		(pin "13"
 			(uuid "7d1d3593-12b6-48b7-8a3e-e0fc6da62815")
@@ -33880,7 +34387,7 @@
 			(uuid "75e4dbbf-9725-47c0-b293-d24583d98c92")
 		)
 		(pin "2"
-			(uuid "9dcde156-3f16-4278-b42c-b556a8042e7c")
+			(uuid "9dcde156-3f16-4278-b42c-b556a8042e7d")
 		)
 		(pin "10"
 			(uuid "013d4ab8-078c-48e2-b1db-3bc9a52f311b")
@@ -33892,7 +34399,7 @@
 			(uuid "e5924f03-67d9-49ee-8a72-51583f9167af")
 		)
 		(pin "4"
-			(uuid "53268980-b8d6-4330-b5eb-5fac090697e6")
+			(uuid "53268980-b8d6-4330-b5eb-5fac090697e7")
 		)
 		(instances
 			(project ""
@@ -34017,6 +34524,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 100.33 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C307331"
+			(at 102.87 35.5662 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34153,6 +34669,15 @@
 		)
 		(property "Description" "20V 1A Schottky Barrier Rectifier Diode, DO-41"
 			(at 143.51 274.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C727113"
+			(at 146.05 272.7324 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34298,6 +34823,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C307331"
+			(at 140.97 25.4062 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "05cd7a88-cd89-4fb6-815e-023841388861")
 		)
@@ -34432,7 +34966,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Bourns PV36Y:TRIM_PV36Y502C01B00"
+		(property "Footprint" "Bourns PV36Y:TRIM_PV36Y203C01B00"
 			(at 44.45 101.6 0)
 			(effects
 				(font
@@ -34541,6 +35075,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 289.56 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C81598"
+			(at 289.56 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)

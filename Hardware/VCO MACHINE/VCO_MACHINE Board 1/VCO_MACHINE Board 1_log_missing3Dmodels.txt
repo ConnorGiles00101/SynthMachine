@@ -1,0 +1,11 @@
+Can not find model defined with enviroment variable:
+${LIB}/Molex_90Grad_6er.STEP
+Can not find model defined with enviroment variable:
+${LIB}/Molex_90Grad_3er.STEP
+Can not find model defined with enviroment variable:
+${LIB}/Molex_90Grad_3er.STEP
+Can not find model defined with enviroment variable:
+${LIB}/Molex_90Grad_3er.STEP
+Can not find model defined with enviroment variable:
+${LIB}/Molex_90Grad_3er.STEP
+[('FM_TGL1', '${LIB}/Molex_90Grad_6er.STEP'), ('PM_FM1', '${LIB}/Molex_90Grad_3er.STEP'), ('SAW_DIR1', '${LIB}/Molex_90Grad_3er.STEP'), ('RV1', '${LIB}/Molex_90Grad_3er.STEP'), ('PLS_TGL1', '${LIB}/Molex_90Grad_3er.STEP')]
